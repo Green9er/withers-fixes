@@ -109,7 +109,7 @@ namespace Lab5
              * does: checks if the user has entered info into a txt  box
              */
             bool check;
-            if (txtString1.Text == "" && txtString2.text == "")
+            if (txtString1.Text == "" && txtString2.Text == "")
             {
                 check = false;
             }
@@ -153,7 +153,7 @@ namespace Lab5
             lstIndex = 0;
             lstIndex = 0;
             addTotal = 0;
-            whil (itemCount  >= 0)
+            while (itemCount  >= 0)
             {
                addTotal += Convert.ToInt16(lstNumbers.Items[lstIndex]) ;
                 itemCount--;              
@@ -175,7 +175,7 @@ namespace Lab5
             do
             {
                 if (Convert.ToInt16(lstNumbers.Items[lstIndex]) % 2 == 1)
-                oddCount+;
+                oddCount++;
                 lstIndex++;
                 itemCount++;
                
@@ -188,7 +188,7 @@ namespace Lab5
 
         private void btnReset_Click(object sender, EventArgs e)
         {//calls reset functions
-            ResetTextGroup
+            ResetTextGroup();
         }
 
         private void btnClear_Click(object sender, EventArgs e)
